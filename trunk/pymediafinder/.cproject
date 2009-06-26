@@ -20,7 +20,7 @@
 </extensions>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<configuration artifactExtension="so" artifactName="pymediafinder" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.so.debug.1878353404" name="Debug" parent="cdt.managedbuild.config.gnu.so.debug" postbuildStep="cd ..; ./setup.py build">
+<configuration artifactExtension="so" artifactName="pymediafinder" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.so.debug.1878353404" name="Debug" parent="cdt.managedbuild.config.gnu.so.debug" postbuildStep="">
 <folderInfo id="cdt.managedbuild.config.gnu.so.debug.1878353404." name="/" resourcePath="">
 <toolChain id="cdt.managedbuild.toolchain.gnu.so.debug.1296562318" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.so.debug">
 <targetPlatform id="cdt.managedbuild.target.gnu.platform.so.debug.352967701" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.so.debug"/>
@@ -54,7 +54,7 @@
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gnucoreutils/Debug}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/imediafinder/Debug}&quot;"/>
 </option>
-<option id="gnu.cpp.link.option.other.1878820515" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList"/>
+<option id="gnu.cpp.link.option.other.1878820515" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other"/>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1893444423" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 <additionalInput kind="additionalinput" paths="$(LIBS)"/>
