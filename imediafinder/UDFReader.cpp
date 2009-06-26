@@ -37,6 +37,7 @@ using namespace std;
 namespace imediafinder {
 
 UDFReader::UDFReader(string dev_name) {
+	this->_loaded = false;
 	this->_dev_name = dev_name;
 	this->_label = "";
 }
@@ -79,8 +80,9 @@ void UDFReader::Load() {
 			int avdp_fd = open(this->_dev_name.c_str(), O_RDONLY);
 			if (avdp_fd != -1) {
 				int status = lseek(avdp_fd, avdp_off, SEEK_SET);
+				int size;
 				if (status != -1) {
-					read(avdp_fd, avdp, avdp_size);
+					size = read(avdp_fd, avdp, avdp_size);
 				}
 
 				close(avdp_fd);
@@ -195,8 +197,9 @@ int UDFReader::GetVolumeDescriptorTagId(uint32_t location_offset) {
 		int tag_fd = open(this->_dev_name.c_str(), O_RDONLY);
 		if (tag_fd != -1) {
 			int status = lseek(tag_fd, location_offset, SEEK_SET);
+			int size;
 			if (status != -1) {
-				read(tag_fd, tag_instance, tag_size);
+				size = read(tag_fd, tag_instance, tag_size);
 			}
 
 			close(tag_fd);
@@ -228,8 +231,9 @@ PrimaryVolumeDescriptor* UDFReader::GetPrimaryVolumeDescriptor(
 		int pvd_fd = open(this->_dev_name.c_str(), O_RDONLY);
 		if (pvd_fd != -1) {
 			int status = lseek(pvd_fd, pvd_offset, SEEK_SET);
+			int size;
 			if (status != -1)
-				read(pvd_fd, pvd, pvd_size);
+				size = read(pvd_fd, pvd, pvd_size);
 
 			close(pvd_fd);
 		}
@@ -283,8 +287,9 @@ VolumeDescriptorPointer* UDFReader::GetVolumeDescriptorPointer(uint32_t location
 		int vdp_fd = open(this->_dev_name.c_str(), O_RDONLY);
 		if (vdp_fd != -1) {
 			int status = lseek(vdp_fd, vdp_offset, SEEK_SET);
+			int size;
 			if (status != -1)
-				read(vdp_fd, vdp, vdp_size);
+				size = read(vdp_fd, vdp, vdp_size);
 
 			close(vdp_fd);
 		}
@@ -340,8 +345,9 @@ LogicalVolumeDescriptor* UDFReader::GetLogicalVolumeDescriptor(uint32_t location
 		int lvd_fd = open(this->_dev_name.c_str(), O_RDONLY);
 		if (lvd_fd != -1) {
 			int status = lseek(lvd_fd, lvd_offset, SEEK_SET);
+			int size;
 			if (status != -1)
-				read(lvd_fd, lvd, lvd_size);
+				size = read(lvd_fd, lvd, lvd_size);
 
 			close(lvd_fd);
 		}

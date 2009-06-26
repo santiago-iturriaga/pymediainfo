@@ -21,6 +21,7 @@ namespace imediafinder {
 ISO9660Reader::ISO9660Reader(string dev_name) {
 	this->_dev_name = dev_name;
 	this->_label = "";
+	this->_loaded = false;
 }
 
 ISO9660Reader::~ISO9660Reader() {
@@ -45,8 +46,9 @@ void ISO9660Reader::Load() {
 		int fd = open(this->_dev_name.c_str(), O_RDONLY);
 		if (fd != -1) {
 			int status = lseek(fd, ISO9660_LABEL_SEEK, SEEK_SET);
+			int size;
 			if (status != -1)
-				read(fd, label_buff, ISO9660_LABEL_LENGTH);
+				size = read(fd, label_buff, ISO9660_LABEL_LENGTH);
 
 			close(fd);
 		}
