@@ -21,10 +21,10 @@ int main() {
 
 	while (iter != mediaAvailable.end()) {
 		MediaInfo media = *iter;
-		cout << ">> " << media.device_name << endl;
-		cout << "   " << media.format_type << endl;
-		cout << "   " << media.label << endl;
-		cout << "   " << media.mount_path << endl;
+		cout << media.device_name << endl;
+		cout << media.format_type << endl;
+		cout << media.label << endl;
+		cout << media.mount_path << endl << endl;
 		iter++;
 	}
 	cout << endl;

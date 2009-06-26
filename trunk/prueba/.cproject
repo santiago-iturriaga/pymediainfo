@@ -24,7 +24,7 @@
 <tool command="g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1231618396" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
 <option id="gnu.cpp.compiler.exe.debug.option.optimization.level.970113391" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 <option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1579765020" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
-<option id="gnu.cpp.compiler.option.preprocessor.def.1837968113" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols"/>
+<option id="gnu.cpp.compiler.option.preprocessor.def.1837968113" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
 <option id="gnu.cpp.compiler.option.include.paths.10801505" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gnucoreutils}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/imediafinder}&quot;"/>

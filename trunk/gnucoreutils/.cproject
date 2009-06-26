@@ -35,6 +35,7 @@
 <option id="gnu.c.compiler.option.preprocessor.def.symbols.615172850" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 <listOptionValue builtIn="false" value="MOUNTED_GETMNTENT1"/>
 </option>
+<option id="gnu.c.compiler.option.misc.other.942032712" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fPIC" valueType="string"/>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.261336471" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.linker.base.1270815186" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>

@@ -3,7 +3,7 @@
 	<name>prueba</name>
 	<comment></comment>
 	<projects>
-		<project>gcorelib</project>
+		<project>gnucoreutils</project>
 		<project>imediafinder</project>
 	</projects>
 	<buildSpec>
