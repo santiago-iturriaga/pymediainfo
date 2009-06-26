@@ -55,10 +55,18 @@ list<MediaInfo> Finder::Find() {
 						// El formato del medio es ISO9660
 						ISO9660Reader reader = ISO9660Reader(dev_name);
 						label = reader.GetLabel();
+#ifdef __DEBUG__
+						cout << "Reading ISO9660 label..." << label << endl;
+#endif
 					} else if (type.compare(UDF) == 0) {
 						// El formato del medio es UDF
 						UDFReader reader = UDFReader(dev_name);
 						label = reader.GetLabel();
+#ifdef __DEBUG__
+						cout << "Reading UDF label..." << label << endl;
+#endif
+					} else {
+						cout << "WTF?!" << endl;
 					}
 
 #ifdef __DEBUG__
