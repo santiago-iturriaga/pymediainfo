@@ -513,6 +513,11 @@
 <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.so.release.2136425386" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.so.release">
 <option id="gnu.cpp.compiler.so.release.option.optimization.level.478242257" name="Optimization Level" superClass="gnu.cpp.compiler.so.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 <option id="gnu.cpp.compiler.so.release.option.debugging.level.1869998577" name="Debug Level" superClass="gnu.cpp.compiler.so.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+<option id="gnu.cpp.compiler.option.include.paths.782205741" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/imediafinder}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gnucoreutils}&quot;"/>
+</option>
+<option id="gnu.cpp.compiler.option.other.other.1350797387" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fPIC" valueType="string"/>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1503377098" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.so.release.603275076" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.release">
@@ -525,6 +530,14 @@
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.release.31605075" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.release">
 <option defaultValue="true" id="gnu.cpp.link.so.release.option.shared.1095648763" name="Shared (-shared)" superClass="gnu.cpp.link.so.release.option.shared" valueType="boolean"/>
+<option id="gnu.cpp.link.option.paths.1447996219" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gnucoreutils/Release}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/imediafinder/Release}&quot;"/>
+</option>
+<option id="gnu.cpp.link.option.libs.855318395" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+<listOptionValue builtIn="false" value="gnucoreutils"/>
+<listOptionValue builtIn="false" value="imediafinder"/>
+</option>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.340433514" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 <additionalInput kind="additionalinput" paths="$(LIBS)"/>
